@@ -190,7 +190,7 @@ def print_rhombus(val):
             a1=1
             b=a-1
             for j in range(1,a+1):
-                print ((a1+j)*' ',end='')
+                print (a1*' ',end='')
                 print ((b*'*'' ')
                 b=b-1
                 a1=a1+1
@@ -274,7 +274,7 @@ def seq_pattern(val):
           print (i,m,end=' ')
 seq_pattern(val=50)#res:2 3 6 9 18 27 54 81 
 # 22.)Program for sequence pattern:      
-seq_pattern(200)res:def seq_pattern(val):
+def seq_pattern(val):
     a=[]
     for j in range(2,val):
         for i in range(2,j):
@@ -286,6 +286,7 @@ seq_pattern(200)res:def seq_pattern(val):
         if ((j*2)+1) in a:
            print (j,end=' ')
 seq_pattern(200)#res:2 3 5 11 23 29 41 53 83 89 
+
 #23.)Program for sequence pattern:
  
                        
