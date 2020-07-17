@@ -241,36 +241,53 @@ Output
 *   *
 * * *
 """
+# 19.) Program for sequence pattern:                  
+def pattern_squence(val):
+    m=11
+    l=1
+    i=0
+    print(m,end=" ")
+    while m<val:
+          m=m+((30*l)+i)
+          print(m,end=" ")
+          l=l+1
+          i=i+1
+pattern_squence(200)# res: 11 41 102 194 317     
 
+# 20.)Program for sequence pattern:
+def seq_pattern(num,val_upto):
+    for i in range(1,num):
+        if i%2==0 or i%3==0 or i%5==0:
+           continue 
+        else:
+            if (i*i)<val_upto:
+                print (i*i,end=' ')
+seq_pattern(100,2000)#res:1 49 121 169 289 361 529 841 961 1369 1681 1849 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+# 21.)Program for sequence pattern:
+def seq_pattern(val):
+    i=1
+    m=1
+    while i<val:
+          i=m*2
+          m=(i*3)//2
+          print (i,m,end=' ')
+seq_pattern(val=50)#res:2 3 6 9 18 27 54 81 
+# 22.)Program for sequence pattern:      
+seq_pattern(200)res:def seq_pattern(val):
+    a=[]
+    for j in range(2,val):
+        for i in range(2,j):
+            if j%i==0:
+                break 
+        else:
+            a.append(j)
+    for j in a:
+        if ((j*2)+1) in a:
+           print (j,end=' ')
+seq_pattern(200)#res:2 3 5 11 23 29 41 53 83 89 
+#23.)Program for sequence pattern:
+ 
+                       
+                       
+                 
